@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Formulários</h1>
+<form action="">
+
+    <label for="email">Seu email</label>
+    <input type="email" name="email" id="email"> <br><br>
+
+    <label for="pnome">Primeiro Nome</label>
+    <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome" required> <br> <br>
+
+    <label for="unome">Ultimo Nome</label>
+    <input type="text" id="unome" name="unome" placeholder="Seu ultimo nome" required> <br> <br>
+
+    <!--Tipo Radio-->
+    <label>
+        <strong>Qual é o seu nível como programador atualmente?</strong>
+    </label><br> <br>
+
+    <label>
+        <input type="radio" name="nivel" value="iniciante" checked>Sou iniciante
+    </label>
+    <label>
+        <input type="radio" name="nivel" value="Medio">Comecei a puco tempo
+    </label>
+    <label>
+        <input type="radio" name="nivel" value="Avancado">Sou avançado
+    </label><br><br>
+
+    <!---Tipo select para selecionar itens-->
+    <label>
+        <strong>Defina a sua escolaridade:</strong>
+    </label>
+    <select id="escolaridade" required>
+        <option selected disabled value="">Selecione</option>
+        <option>Educação Básica</option>
+        <option>Ensino Médio</option>
+        <option>Ensino Superior</option>
+        <option>Pós Graduação</option>
+    </select> <br><br>
+
+    <label>
+        <strong>Selecione as tecnologias que você conhece:</strong>
+    </label> <br><br>
+
+    <input type="checkbox" id="Tecnologia1" name="Tecnologia1" value="HTML">
+    <label for="Tecnologia1">HTML5</label>
+
+    <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+    <label for="Tecnologia2">CSS</label>
+
+    <input type="checkbox" name="tecnologia3" id="tecnologia3" value="Java">
+    <label for="tecnologia3">Java</label>
+
+    <input type="checkbox" name="tecnologia4" id="tecnologia4" value="Angular">
+    <label for="tecnologia4">Angular</label> <br><br>
+
+    <!--Tipo Date-->
+    <label for="Nascimento">Data Nascimento:</label>
+    <input type="date" name="Nascimento" id="Nascimento">
+
+
+    <br><br>
+
+    <input type="submit" value="Cadastrar">
+</form>
+</body>
+</html>
